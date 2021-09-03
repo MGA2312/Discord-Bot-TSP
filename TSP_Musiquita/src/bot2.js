@@ -62,12 +62,11 @@ client.on('message', async message=> {
     break;
     //help
     case "help":
-
       message.channel.send(`${prefix}play:reproduce links o busca en youtube <br>
-                            ${prefix}pause:pausa la reproducciòn <br>
-                            ${prefix}skip:saltea la reproducciòn actual por la proxima en la lista de reproducciòn o cola <br>
+                            ${prefix}pause:pausa la reproducción <br>
+                            ${prefix}skip:saltea la reproducción actual por la proxima en la lista de reproducciòn o cola <br>
                             ${prefix}resume:vuelve a reproducir<br>
-                            ${prefix}stop:detiene la reproducciòn<br>` );
+                            ${prefix}stop:detiene la reproducción<br>` );
     break;
     //no disponible
     default:
