@@ -1,5 +1,5 @@
 //puto el que lee 2
-
+//uwu
 //requires, etc
 require('dotenv').config();
 const { Client, Intents } = require ( 'discord.js' );
