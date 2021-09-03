@@ -1,3 +1,5 @@
+//puto el que lee
+
 //requires, etc
 require('dotenv').config();
 const { Client, Intents } = require ( 'discord.js' );
