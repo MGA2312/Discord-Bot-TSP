@@ -21,7 +21,7 @@ client.on('ready', () => {
 });
 
 //Prueba
-client.on("message", message => {
+client.on('message', message => {
   if(message.content.startsWith("hola")){
     message.channel.send("tu nariz contra mis bolas, te falta calle...");
   }
@@ -63,7 +63,11 @@ client.on('message', async message=> {
     //help
     case "help":
 
-      message.channel.send("Por ahora no esta disponible (paja armarla)");
+      message.channel.send(`${prefix}play: reproduce links o busca en youtube <br>
+                            ${prefix}pause: pausa la reproducciòn <br>
+                            ${prefix}skip:saltea la reproducciòn actual por la proxima en la lista de reproducciòn o cola <br>
+                            ${prefix}resume:vuelve a reproducir<br>
+                            ${prefix}stop:detiene la reproducciòn<br>` );
     break;
     //no disponible
     default:
