@@ -80,11 +80,11 @@ client.on('message', async message=> {
 //voice connection 
 //suscripcion a un canal de voz
  
-
+const subscription = connection.subscribe(audioPlayer);
 // subscription could be undefined if the connection is destroyed!
 if (subscription) {
 	// Unsubscribe after 5 seconds (stop playing audio on the voice connection)
-	setTimeout(() => subscription.unsubscribe(), 5_000);
+	setTimeout(() => subscription.unsubscribe(), 60_000);
 }
 
 
@@ -109,15 +109,6 @@ connection.destroy();
 connection.subscribe(audioPlayer);
 */ 
 
-
-
-
-//reproducir audio
-const subscription = connection.subscribe(audioPlayer);
-if (subscription) {
-	// Unsubscribe after 5 seconds (stop playing audio on the voice connection)
-	setTimeout(() => subscription.unsubscribe(), 5_000);
-}
 
 
 
